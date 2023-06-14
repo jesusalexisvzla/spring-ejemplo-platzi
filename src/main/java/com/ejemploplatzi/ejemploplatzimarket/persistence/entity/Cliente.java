@@ -11,7 +11,7 @@ public class Cliente {
     private String id;
 
     private String nombre;
-    private String appellidos;
+    private String apellidos;
     private Long celular;
     private String direccion;
 
@@ -37,12 +37,12 @@ public class Cliente {
         this.nombre = nombre;
     }
 
-    public String getAppellidos() {
-        return appellidos;
+    public String getApellidos() {
+        return apellidos;
     }
 
-    public void setAppellidos(String appellidos) {
-        this.appellidos = appellidos;
+    public void setApellidos(String appellidos) {
+        this.apellidos = appellidos;
     }
 
     public Long getCelular() {
@@ -67,5 +67,13 @@ public class Cliente {
 
     public void setCorreoElectronico(String correoElectronico) {
         this.correoElectronico = correoElectronico;
+    }
+
+    public List<Compra> getCompras() {
+        return compras;
+    }
+
+    public void setCompras(List<Compra> compras) {
+        this.compras = compras;
     }
 }
